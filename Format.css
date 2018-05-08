@@ -36,6 +36,13 @@ body {
 #c2, #c3, #c4{
   min-height: 500px;
 }
+.heroIMG{
+	margin: 0 auto;
+	display: block;
+	padding: 100px;
+	max-width: 99%;
+	max-height: 99%;
+}
 #c1{
   display:inline-block;
   vertical-align: top;
@@ -59,7 +66,7 @@ body {
   display:inline-block;
   vertical-align: top;
   width: 100%;
-  background-color: #c5050c;
+  background-color: #972d32;
 }
 .separator{
   display:block;
@@ -79,3 +86,12 @@ footer h1, footer h2, footer h3, footer p{
   color: white;
   text-align: center;
 }
+
+
+/*----------------------media changes---------------------- */
+/* @media(max-width: 900px)
+{
+	.heroIMG{
+		padding: 10px;
+	}
+} */
