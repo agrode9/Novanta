@@ -1,0 +1,81 @@
+
+
+
+/*----------------------Font sizing---------------------- */
+h1
+{
+	font-size:  3.998em ;
+	text-align: center;
+}
+h2
+{
+	font-size:  2.827em ;
+}
+h3
+{
+	font-size:  1.999em ;
+}
+h4
+{
+	font-size:  1.414em ;
+}
+
+p
+{
+	font-size: 1.25em;
+}
+
+/*----------------------Body---------------------- */
+body {
+    margin:0;
+    padding:0;
+}
+#c1{
+  min-height: 300px;
+}
+#c2, #c3, #c4{
+  min-height: 500px;
+}
+#c1{
+  display:inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: white;
+}
+#c2{
+  display:inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #dadfe1;
+}
+#c3
+{
+  display:inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: white;
+}
+#c4{
+  display:inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #c5050c;
+}
+.separator{
+  display:block;
+  width: 100%;
+  min-height: 6px;
+  background-color: black;
+}
+/*----------------------Footer---------------------- */
+footer{
+  display:inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #282728;
+  min-height: 300px;
+}
+footer h1, footer h2, footer h3, footer p{
+  color: white;
+  text-align: center;
+}
