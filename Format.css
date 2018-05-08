@@ -24,6 +24,9 @@ p
 {
 	font-size: 1.25em;
 }
+.red{
+  color: #972d32;
+}
 
 /*----------------------Body---------------------- */
 body {
@@ -39,7 +42,7 @@ body {
 .heroIMG{
 	margin: 0 auto;
 	display: block;
-	padding: 100px;
+	padding: 100px 0px 100px 0px;
 	max-width: 99%;
 	max-height: 99%;
 }
