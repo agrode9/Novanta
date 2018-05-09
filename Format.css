@@ -24,9 +24,83 @@ p
 {
 	font-size: 1.25em;
 }
+
+hr
+{
+	display: block;
+	content: "";
+	display: block;
+	margin: 0px auto;
+	background-color: #282728;
+	width: 40px;
+	height: 10px;
+	margin-top: 40px;
+	border: none;
+	margin-bottom: -10px;
+}
 .red{
   color: #972d32;
 }
+.white{
+	color: white;
+}
+.whitehr{
+	background-color: white;
+}
+.center{
+	text-align: center;
+}
+.gray{
+	color: #282728;
+}
+.content
+{
+	text-align: center;
+	max-width: 50%;
+	line-height: 1.5;
+	margin: 0 auto;
+	padding-bottom: 1rem;
+}
+.separator{
+  display:block;
+  width: 100%;
+  min-height: 40px;
+}
+
+/*----------------------Grid---------------------- */
+.imageGrid {
+  display: grid;
+	grid-template-columns: 15%  15%  20%;
+	justify-content: center;
+}
+.box {
+  padding: 10px;
+}
+.first{
+	grid-column: 1 / span 2;
+}
+.first img, .second img, .third img, .fourth img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center
+}
+.second{
+	grid-column: 3 ;
+	grid-row: 1 / span 2;
+}
+.third{
+	grid-column: 1 ;
+			grid-row: 2 ;
+}
+.fourth{
+	grid-column: 2 ;
+			grid-row: 2 ;
+}
+
+
+
 
 /*----------------------Body---------------------- */
 body {
@@ -51,6 +125,7 @@ body {
   vertical-align: top;
   width: 100%;
   background-color: white;
+	margin: 0 auto;
 }
 #c2{
   display:inline-block;
@@ -71,12 +146,55 @@ body {
   width: 100%;
   background-color: #972d32;
 }
-.separator{
-  display:block;
-  width: 100%;
-  min-height: 6px;
-  background-color: black;
+
+/* About content try */
+.codeBack
+{
+	background-image: url("img/chairs.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow-y: scroll;
 }
+.tint
+{
+	position: relative;
+	display:inline-block;
+	vertical-align: top;
+}
+.tint:after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0, 0.6);
+	transition: all .3s linear;
+}
+.tint p, .tint h2, .tint h4{
+	color: white;
+	position: relative;
+	z-index: 1000000;
+	margin: 0 auto;
+}
+#section1 h2{
+	padding: 30px;
+}
+#section1
+{
+   display:block;
+   vertical-align: top;
+   width: 100%;
+	 overflow: hidden;
+}
+
 /*----------------------Footer---------------------- */
 footer{
   display:inline-block;
@@ -85,11 +203,14 @@ footer{
   background-color: #282728;
   min-height: 300px;
 }
-footer h1, footer h2, footer h3, footer p{
+footer h1, footer h2, footer h3, footer h4, footer p{
   color: white;
   text-align: center;
 }
-
+footer h4
+{
+	font-size: .85em;
+}
 
 /*----------------------media changes---------------------- */
 /* @media(max-width: 900px)
@@ -98,3 +219,45 @@ footer h1, footer h2, footer h3, footer p{
 		padding: 10px;
 	}
 } */
+@media (max-width: 900px){
+	#section1 p
+	{
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		max-width: 90%;
+
+	}
+	p{
+		max-width: 90%;
+	}
+	.content
+	{
+		max-width: 90%;
+	}
+	.imageGrid {
+	  display: grid;
+		grid-template-columns: 50% 50%;
+		justify-content: center;
+	}
+	.box{
+		padding:5px;
+	}
+
+	.first{
+		grid-column: 1 ;
+	}
+	.second{
+		grid-column: 2;
+		grid-row: 1 / span 2;
+	}
+	.third{
+		grid-column: 1 ;
+		grid-row: 2 ;
+	}
+	.fourth{
+		grid-column: 1 / span 2 ;
+		grid-row: 3 ;
+	}
+}
