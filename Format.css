@@ -158,6 +158,12 @@ body {
   background-color: #972d32;
 }
 
+iframe{
+	display: block;
+	margin: 0 auto;
+	min-width: 50%;
+	min-height: 400px;
+}
 /* About content try */
 .codeBack
 {
@@ -283,6 +289,12 @@ footer a img{
 	}
 } */
 @media (max-width: 900px){
+	iframe{
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+		height: auto;
+	}
 	#section1 p
 	{
 		width: 90%;
