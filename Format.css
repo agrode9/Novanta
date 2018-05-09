@@ -110,9 +110,6 @@ a.button
   padding: 10px;
 	flex-basis: 25%;
 }
-.first{
-	grid-column: 1 / span 2;
-}
 .first img, .second img, .third img, .fourth img{
 	width: 100%;
 	height: 100%;
@@ -120,20 +117,44 @@ a.button
   align-items: center;
   justify-content: center
 }
+.first{
+	grid-column: 1 / span 2;
+}
 .second{
 	grid-column: 3 ;
 	grid-row: 1 / span 2;
 }
 .third{
 	grid-column: 1 ;
-			grid-row: 2 ;
+	grid-row: 2 ;
 }
 .fourth{
 	grid-column: 2 ;
-			grid-row: 2 ;
+	grid-row: 2 ;
 }
-
-
+/* middle display */
+.firsta img, .seconda img, .thirda img, .fourtha img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firsta{
+	grid-column: 2 / 4;
+}
+.seconda{
+	grid-column: 1 ;
+	grid-row: 1 / span 3;
+}
+.thirda{
+	grid-column: 2 ;
+	grid-row: 2 ;
+}
+.fourtha{
+	grid-column: 3 ;
+	grid-row: 2 ;
+}
 
 
 /*----------------------Body---------------------- */
@@ -366,6 +387,23 @@ footer a img{
 		grid-column: 1 / span 2 ;
 		grid-row: 3 ;
 	}
+
+	.firsta{
+		grid-column: 1 / span 3;
+	}
+	.seconda{
+		grid-column: 1 ;
+		grid-row: 1 / span 3;
+	}
+	.thirda{
+		grid-column: 2 ;
+		grid-row: 1 ;
+	}
+	.fourtha{
+		grid-column: 2 ;
+		grid-row: 2 ;
+	}
+
 
 	.footerInfo
 	{
