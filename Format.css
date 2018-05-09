@@ -1,6 +1,23 @@
+/*----------------------head and nav---------------------- */
+.nav{
+	overflow: hidden;
+}
+.nav a{
+	float:left;
+	text-align: center;
+	padding:12px 27px;
+	text-decoration: none;
+	color: #282728;
+}
+.nav a:hover{
+	color: white;
+	background-color: #972d32;
+	transition: all .3s linear;
 
-
-
+}
+.onPage a{
+  border-bottom:4px solid #972d32;
+}
 /*----------------------Font sizing---------------------- */
 h1
 {
