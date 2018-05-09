@@ -24,7 +24,10 @@ p
 {
 	font-size: 1.25em;
 }
-
+h1, h2, h3, h4, p
+{
+	font-family: 'Oxygen', sans-serif;
+}
 hr
 {
 	display: block;
@@ -103,6 +106,14 @@ hr
 
 
 /*----------------------Body---------------------- */
+a{
+	text-decoration: underline;
+	color: #dadfe1;
+}
+a:hover{
+
+}
+
 body {
     margin:0;
     padding:0;
@@ -210,8 +221,60 @@ footer h1, footer h2, footer h3, footer h4, footer p{
 footer h4
 {
 	font-size: .85em;
+	text-align: center;
+	padding-top: 100px;
+}
+ul{
+	list-style: none;
 }
 
+.footerwrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+ 		align-items: center;
+		max-width: 50%;
+}
+.footerInfo{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	max-width: 50%;
+	margin: 0 auto;
+	flex-basis: 50%;
+max-width: 50%;
+text-align: left;
+-webkit-box-flex: 1;
+flex: 1 0 33.333%;
+}
+.footerIMG
+{
+		flex-basis: 50%;
+    max-width: 50%;
+    text-align: right;
+		padding-top: 2rem;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-wrap: wrap;
+	  flex-wrap: wrap;
+	  -ms-flex-pack: distribute;
+	  justify-content: space-around;
+   	max-width: 50%;
+   	margin: 0 auto;
+}
+footer a img{
+	padding-right: 15px;
+}
 /*----------------------media changes---------------------- */
 /* @media(max-width: 900px)
 {
@@ -259,5 +322,25 @@ footer h4
 	.fourth{
 		grid-column: 1 / span 2 ;
 		grid-row: 3 ;
+	}
+
+	.footerInfo
+	{
+		text-align: center;
+		display: inline;
+	}
+	.footerwrap{
+		display: block;
+		max-width: 100%;
+	}
+	.footerIMG
+	{
+		max-width: 100%;
+		max-height: 100px;
+		display: block;
+		margin: 0 auto;
+	}
+	footer h4{
+		padding-top: 70px;
 	}
 }
