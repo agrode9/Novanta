@@ -250,6 +250,30 @@ a.button
 	background-color: #282728;
 	color: #dadfe1;
 }
+
+a.button1
+{
+	background-color: #972d32;
+	border: none;
+	color: #dadfe1;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	transition: 0.3s;
+	cursor: pointer;
+	-webkit-transition:0.3s all ease;
+ 	transition:0.3s ease all;
+	font-size: 1.414em;
+	max-width: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+a.button1:hover{
+	background-color: #282728;
+	color: #dadfe1;
+}
 /*----------------------Grid---------------------- */
 .imageGrid {
   display: flex;
@@ -370,6 +394,7 @@ iframe{
 	margin: 0 auto;
 	min-width: 50%;
 	min-height: 400px;
+	padding-bottom: 50px;
 }
 /* About content try */
 .codeBack
@@ -650,7 +675,7 @@ footer a img{
 		font-family: 'Oxygen', sans-serif;
 		float: left;
 		padding-left: 23%;
-		padding-top: 30%;
+		padding-top: 45%;
 		text-shadow: 5px 2px 8px black;
 	}
 }
