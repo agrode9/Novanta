@@ -50,7 +50,6 @@
 .hotphone a{
 	text-decoration: underline;
 	font-size: 1.25em;
-
 }
 
 /*----------------------Font sizing---------------------- */
@@ -482,16 +481,21 @@ footer a img{
 	}
 	.nav{
 		list-style-type: none;
-		    margin: 0;
-		    padding: 0;
-		    width: 200px;
-
+		margin: 0;
+		padding: 0;
+	 width: 200px;
 	}
-	.nav a{
-
-
+	.hotnav li
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 5px;
+		width: 200px;
+		left: 0;
+		display: block;
 	}
-
-
+	.hotnav{
+		padding: 0;
+	}
 
 }
