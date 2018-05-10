@@ -70,12 +70,15 @@ h4
 {
 	font-size:  1.414em ;
 }
-
+h5{
+	font-size:  1.21em ;
+	color: #972d32;
+}
 p
 {
 	font-size: 1.25em;
 }
-h1, h2, h3, h4, p
+h1, h2, h3, h4, p, h5
 {
 	font-family: 'Oxygen', sans-serif;
 }
@@ -100,9 +103,6 @@ hr
 }
 .whitehr{
 	background-color: white;
-}
-.center{
-	text-align: center;
 }
 .gray{
 	color: #282728;
@@ -221,10 +221,10 @@ body {
     margin:0;
     padding:0;
 }
-#c1{
+#c1, #c3{
   min-height: 300px;
 }
-#c2, #c3, #c4{
+#c2, #c4{
   min-height: 500px;
 }
 .heroIMG{
@@ -314,7 +314,6 @@ iframe{
    width: 100%;
 	 overflow: hidden;
 }
-
 /*----------------------Footer---------------------- */
 footer{
   display:inline-block;
