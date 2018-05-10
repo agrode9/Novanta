@@ -33,7 +33,7 @@
 	width: 90%;
 	justify-content: center;
 }
-.flex h3{
+/* .flex h3{
 	color: white;
 	position: absolute;
 	z-index: 1000000;
@@ -44,7 +44,7 @@
 	margin-left: 20px;
 	margin-top: 20%;
 	text-shadow: 5px 2px 8px black;
-}
+} */
 .white{
 	color: white;
 }
@@ -641,7 +641,7 @@ footer a img{
 		grid-column: 1;
 		grid-row: 4;
 	}
-	.flex h3{
+	/* .flex h3{
 		color: white;
 		position: absolute;
 		z-index: 1000000;
@@ -652,5 +652,5 @@ footer a img{
 		margin-left: 23%;
 		margin-top: 45%;
 		text-shadow: 5px 2px 8px black;
-	}
+	} */
 }
