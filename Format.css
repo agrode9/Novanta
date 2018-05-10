@@ -1,3 +1,104 @@
+/*************************************************work displays*************************************************/
+.flex
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+		padding-bottom: 20px;
+}
+
+@supports (display: grid) {
+	.flex {
+		display: grid;
+		padding: 0;
+		margin: 0;
+		grid-template-columns: 30% 30%;
+		justify-content: center;
+		padding-bottom: 20px;
+	}
+}
+.project
+{
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	overflow: hidden;
+}
+.project img
+{
+	width: 90%;
+	justify-content: center;
+}
+.flex h3{
+	color: white;
+	position: absolute;
+	z-index: 1000000;
+	margin: 0 auto;
+	font-size: 2em;
+	font-family: 'Oxygen', sans-serif;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20%;
+	text-shadow: 5px 2px 8px black;
+}
+.white{
+	color: white;
+}
+.pizzas{
+	grid-column: 1;
+	grid-row: 1;
+}
+.salads{
+	grid-column: 2;
+	grid-row: 1;
+}
+.drinks{
+	grid-column: 1;
+	grid-row: 2;
+}
+.desserts{
+	grid-column: 2;
+	grid-row: 2;
+}
+/* .pizza img, .second img, .third img, .fourth img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center
+} */
+.first{
+	grid-column: 1 / span 2;
+}
+.second{
+	grid-column: 3 ;
+	grid-row: 1 / span 2;
+}
+.third{
+	grid-column: 1 ;
+	grid-row: 2 ;
+}
+.fourth{
+	grid-column: 2 ;
+	grid-row: 2 ;
+}
+/*************************************************end work display*************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------head and nav---------------------- */
 .nav{
 	overflow: hidden;
@@ -81,6 +182,9 @@ p
 h1, h2, h3, h4, p, h5
 {
 	font-family: 'Oxygen', sans-serif;
+}
+.dark{
+	color: #282728;
 }
 hr
 {
@@ -497,4 +601,56 @@ footer a img{
 		padding: 0;
 	}
 
+
+	@supports (display: grid) {
+		.flex {
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-content: center;
+		}
+	}
+	.project
+	{
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		padding-bottom: 15px;
+	}
+	.project img
+	{
+		width: 60%;
+		justify-content: center;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.pizzas{
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.salads{
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.drinks{
+		grid-column: 1;
+		grid-row: 3;
+	}
+	.desserts{
+		grid-column: 1;
+		grid-row: 4;
+	}
+	.flex h3{
+		color: white;
+		position: absolute;
+		z-index: 1000000;
+		margin: 0 auto;
+		font-size: 2em;
+		font-family: 'Oxygen', sans-serif;
+		float: left;
+		margin-left: 23%;
+		margin-top: 45%;
+		text-shadow: 5px 2px 8px black;
+	}
 }
