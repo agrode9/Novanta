@@ -33,7 +33,7 @@
 	width: 90%;
 	justify-content: center;
 }
-/* .flex h3{
+.flex h3{
 	color: white;
 	position: absolute;
 	z-index: 1000000;
@@ -44,7 +44,8 @@
 	margin-left: 20px;
 	margin-top: 20%;
 	text-shadow: 5px 2px 8px black;
-} */
+	display: none;
+}
 .white{
 	color: white;
 }
