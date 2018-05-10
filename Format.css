@@ -41,10 +41,9 @@
 	font-size: 2em;
 	font-family: 'Oxygen', sans-serif;
 	float: left;
-	margin-left: 20px;
-	margin-top: 20%;
+	padding-left: 20px;
+	padding-top: 20%;
 	text-shadow: 5px 2px 8px black;
-	display: none;
 }
 .white{
 	color: white;
@@ -642,7 +641,7 @@ footer a img{
 		grid-column: 1;
 		grid-row: 4;
 	}
-	/* .flex h3{
+	.flex h3{
 		color: white;
 		position: absolute;
 		z-index: 1000000;
@@ -650,8 +649,8 @@ footer a img{
 		font-size: 2em;
 		font-family: 'Oxygen', sans-serif;
 		float: left;
-		margin-left: 23%;
-		margin-top: 45%;
+		padding-left: 23%;
+		padding-top: 30%;
 		text-shadow: 5px 2px 8px black;
-	} */
+	}
 }
