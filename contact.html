@@ -3,6 +3,8 @@
   <link href="Format.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
+    <title>Contact | Novanta</title>
+    <link rel="icon" type="image/ico" href="hero.png" >
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   </head>
   <body>
@@ -43,25 +45,43 @@
       <h3 class ="center white">
         We would love to hear from you!
       </h3>
-      <br />
+
+      <form action="https://formspree.io/grode2@wisc.edu" method="POST" target="_blank">
+        <ul class="container">
+          <li class="row">
+            <input type="text" name="name" placeholder="Name" required>
+
+            <input type="email" name="_replyto" placeholder="E-mail" required>
+
+            <textarea type="text" name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send" id="contact-form-send">
+          </li>
+         </ul>
+      </form>
+
+
+      <br>
     </div>
   </body>
-    <footer>
-      <div class = "footerwrap">
-        <img class = "footerIMG" src ="hero.png"/>
-        <ul class = "footerInfo">
-          <li class="white">
-            <br /><br />
-            <a href="https://www.google.com/maps/dir//Novanta,+8452+Old+Sauk+Rd,+Middleton,+WI+53562/@43.0753219,-89.531685,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8807af1522d92ff7:0x3018520c91693042!2m2!1d-89.529491!2d43.075318!3e0" target="_blank">8452 Old Sauk Rd<br />Middleton, WI 53562</a><br /><br />
-            <a href="tel:16088317740">608-831-7740</a>
-            <br /><br />
-            <a href="https://www.facebook.com/novantamadison"  target="_blank"><img src="img/facebook.png"></a>
-            <a href="https://www.instagram.com/novanta_pizza_madison/" target="_blank"><img src="img/instagram.png"></a>
-          </li>
-        </ul>
-      </div>
-      <h4>
-        &#169; Novanta. All Rights Reserved.
-      </h4>
-    </footer>
+  <footer>
+    <div class = "footerwrap">
+      <img class = "footerIMG" src ="hero.png"/>
+      <ul class = "footerInfo">
+        <li class="white">
+          <br /><br />
+          <a href="https://www.google.com/maps/dir//Novanta,+8452+Old+Sauk+Rd,+Middleton,+WI+53562/@43.0753219,-89.531685,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8807af1522d92ff7:0x3018520c91693042!2m2!1d-89.529491!2d43.075318!3e0" target="_blank">8452 Old Sauk Rd<br />Middleton, WI 53562</a><br /><br />
+          <a href="tel:16088317740">608-831-7740</a>
+          <br /><br />
+          <a href="https://www.facebook.com/novantamadison"  target="_blank"><img src="img/facebook.png"></a>
+          <a href="https://www.instagram.com/novanta_pizza_madison/" target="_blank"><img src="img/instagram.png"></a>
+          <p>
+            Open 7 days a week<br />Monday – Saturday:<br />11 a.m. – 9 p.m.<br />Sunday: 11 a.m. – 8 p.m.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <h4>
+      &#169; Novanta. All Rights Reserved.
+    </h4>
+  </footer>
 </html>
