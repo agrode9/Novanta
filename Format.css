@@ -347,7 +347,7 @@ a.button1:hover{
 @supports (display: grid) {
 	.imageGrid {
 		display: grid;
-		grid-template-columns: 15%  15%  20%;
+		grid-template-columns: 15%  15%  25%;
 		justify-content: center;
 	}
 }
