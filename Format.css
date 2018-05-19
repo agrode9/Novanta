@@ -352,7 +352,7 @@ a.button1:hover{
 @supports (display: grid) {
 	.imageGrid {
 		display: grid;
-		grid-template-columns: 15%  15%  23%;
+		grid-template-columns: 18%  18%  26%;
 		justify-content: center;
 	}
 }
@@ -430,7 +430,7 @@ body {
 .heroIMG{
 	margin: 0 auto;
 	display: block;
-	padding: 100px 0px 100px 0px;
+	padding: 50px 0px 100px 0px;
 	max-width: 99%;
 	max-height: 99%;
 }
