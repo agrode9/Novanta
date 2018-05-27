@@ -710,8 +710,11 @@ footer a {
 		padding: 0;
     margin-left: -200px;
 	}
+  #c1{
+    min-height: 450px;
+  }
   .nav a{
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding:12px 12px;
     margin-left: 20px;
   }
@@ -726,6 +729,7 @@ footer a {
 	}
 	.hotnav{
 		padding: 0;
+    position: relative;
 	}
 
 
