@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'rabioheadregular';
+    src: url('rabiohead-webfont.woff2') format('woff2'),
+         url('rabiohead-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 /*************************************************contact*************************************************/
 
 .container{
@@ -168,12 +175,16 @@ textarea
 
 
 
-
-
 /*----------------------head and nav---------------------- */
 .nav{
-	overflow: hidden;
+  position: absolute;
+  display: inline-block;
+  margin: 0 auto;
+  bottom: 20px;
+  text-align: center;
+  margin-left: -250px;
 }
+
 .nav a{
 	float:left;
 	text-align: center;
@@ -183,11 +194,14 @@ textarea
 	font-size: 1.25em;
 	display: block;
 }
+.nav li{
+  display: inline;
+  text-align: center;
+}
 .nav a:hover{
 	color: white;
 	background-color: #972d32;
 	transition: all .3s linear;
-
 }
 .onPage a{
   border-bottom:4px solid #972d32;
@@ -435,11 +449,13 @@ body {
 	max-height: 99%;
 }
 #c1{
-  display:inline-block;
+  display:block;
   vertical-align: top;
   width: 100%;
   background-color: white;
 	margin: 0 auto;
+  position: relative;
+  text-align: center;
 }
 #c2{
   display:inline-block;
@@ -692,8 +708,13 @@ footer a {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-	 width: 200px;
+    margin-left: -200px;
 	}
+  .nav a{
+    font-size: 1rem;
+    padding:12px 12px;
+    margin-left: 20px;
+  }
 	.hotnav li
 	{
 		list-style-type: none;
@@ -701,7 +722,7 @@ footer a {
 		padding: 5px;
 		width: 200px;
 		left: 0;
-		display: block;
+    display: inline;
 	}
 	.hotnav{
 		padding: 0;
@@ -772,7 +793,6 @@ footer a {
 		}
 }
 @media (max-width: 600px){
-
   	@supports (display: grid) {
   		.flex {
   			display: grid;
