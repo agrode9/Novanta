@@ -686,6 +686,10 @@ body {
   position: relative;
   text-align: center;
   background-image: url("img/back.jpg");
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #c2{
   display:inline-block;
