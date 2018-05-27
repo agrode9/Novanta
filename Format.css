@@ -179,7 +179,7 @@ textarea
 @supports (display: grid) {
 	.menuImageGrid {
 		display: grid;
-		grid-template-columns: 18%  18% 18% 18%;
+		grid-template-columns: 20%  20% 20% 20%;
 		justify-content: center;
 	}
   .oddMenuImageGrid{
@@ -221,20 +221,16 @@ textarea
   grid-row: 2;
 }
 .largeb{
-	grid-column: 1 / span 2;
-	grid-row: 2 / span 3;
-}
-.thirdb{
 	grid-column: 4;
 	grid-row: 2;
 }
-.fourthb{
-	grid-column: 3;
-	grid-row: 3;
+.thirdb{
+	grid-column: 1;
+	grid-row: 2;
 }
 .fifthb{
-  grid-column: 4;
-  grid-row: 3;
+  grid-column: 2;
+  grid-row: 2;
 }
 /* no tomato sauce pizza display */
 .firstd
@@ -249,11 +245,11 @@ textarea
 }
 .thirdd{
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 1;
 }
 .fourthd{
   grid-column: 3 / 5;
-  grid-row: 1 / span 2;
+  grid-row: 2 / span 4;
 }
 .larged{
   grid-column: 1 / span 2;
@@ -261,7 +257,7 @@ textarea
 }
 .fifthd{
   grid-column: 4;
-  grid-row: 3;
+  grid-row: 1;
 }
 /* salad displays */
 .firsts{
@@ -320,12 +316,12 @@ textarea
 
   /* pizza */
   .firstc{
-  	grid-column: 1;
+  	grid-column: 1 /span 2;
     grid-row: 1;
   }
   .secondc{
-  	grid-column: 2 ;
-  	grid-row: 1;
+  	grid-column: 1 ;
+  	grid-row: 5;
   }
   .thirdc{
   	grid-column: 1;
