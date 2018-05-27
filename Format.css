@@ -686,10 +686,6 @@ body {
   position: relative;
   text-align: center;
   background-image: url("img/back.jpg");
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 #c2{
   display:inline-block;
@@ -845,16 +841,6 @@ footer a {
 	font-family: 'Oxygen', sans-serif;
 }
 @media (max-width: 900px){
-  #c1{
-    display:block;
-    vertical-align: top;
-    width: 100%;
-    background-color: white;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    background-image: url("img/back.jpg");
-  }
 	footer p{
 		text-align: center;
 		padding: 0;
