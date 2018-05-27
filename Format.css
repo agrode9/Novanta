@@ -173,7 +173,7 @@ textarea
 	grid-row: 2 ;
 }
 /*************************************************end work display*************************************************/
-.menuImageGrid {
+.menuImageGrid, .oddMenuImageGrid {
   display: flex;
 }
 @supports (display: grid) {
@@ -182,11 +182,16 @@ textarea
 		grid-template-columns: 18%  18% 18% 18%;
 		justify-content: center;
 	}
+  .oddMenuImageGrid{
+    display: grid;
+		grid-template-columns: 25% 25% 25%;
+		justify-content: center;
+  }
 }
 
 .firstc img, .secondc img, .thirdc img, .fourthc img, .firstb img, .secondb img,
 .thirdb img, .largeb img, .fourthb img, .fifthb img, .firstd img, .secondd img,
-.thirdd img, .fourthd img, .larged img, .fifthd img{
+.thirdd img, .fourthd img, .larged img, .fifthd img, .firsts img, .seconds img, .thirds img{
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -258,11 +263,25 @@ textarea
   grid-column: 4;
   grid-row: 3;
 }
+/* salad displays */
+.firsts{
+  grid-column: 1;
+  grid-row: 1;
+}
+.seconds
+{
+  grid-column: 2;
+  grid-row: 1;
+}
+.thirds
+{
+  grid-column: 3;
+  grid-row: 1;
+}
 
 
 
-
-.menuImageGrid h4{
+.menuImageGrid h4, .oddMenuImageGrid h4{
   color: white;
   position: absolute;
   z-index: 1000000;
@@ -280,19 +299,26 @@ textarea
   background-color: #972d32;
 }
 @media(max-width:1000px) {
-  .menuImageGrid h4{
+  .menuImageGrid h4, .oddMenuImageGrid{
     font-size: 1.2rem;
   }
 }
 @media(max-width:830px) {
 
   @supports (display: grid) {
-  	.menuImageGrid {
+  	.menuImageGrid{
   		display: grid;
   		grid-template-columns: 50% 50%;
   		justify-content: center;
   	}
+    .oddMenuImageGrid{
+      display: grid;
+  		grid-template-columns: 100%;
+  		justify-content: center;
+    }
   }
+
+  /* pizza */
   .firstc{
   	grid-column: 1;
     grid-row: 1;
@@ -357,6 +383,21 @@ textarea
   grid-column: 2;
   grid-row: 4;
 }
+/* salad */
+.firsts{
+  grid-column: 1;
+  grid-row: 1;
+}
+.seconds{
+  grid-column: 1;
+  grid-row: 2;
+}
+.thirds
+{
+  grid-column: 1;
+  grid-row: 3;
+}
+
 
 }
 
