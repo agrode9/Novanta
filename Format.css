@@ -6,8 +6,16 @@
     font-style: normal;
 
 }
-/*************************************************contact*************************************************/
+/*************************************************menu display*************************************************/
 
+
+
+
+
+
+
+
+/*************************************************contact*************************************************/
 .container{
   padding: 0;
   margin: 0;
@@ -165,9 +173,192 @@ textarea
 	grid-row: 2 ;
 }
 /*************************************************end work display*************************************************/
+.menuImageGrid {
+  display: flex;
+}
+@supports (display: grid) {
+	.menuImageGrid {
+		display: grid;
+		grid-template-columns: 18%  18% 18% 18%;
+		justify-content: center;
+	}
+}
+
+.firstc img, .secondc img, .thirdc img, .fourthc img, .firstb img, .secondb img,
+.thirdb img, .largeb img, .fourthb img, .fifthb img, .firstd img, .secondd img,
+.thirdd img, .fourthd img, .larged img, .fifthd img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center
+}
+/* pizza displays */
+.firstc{
+	grid-column: 1;
+  grid-row: 1;
+}
+.secondc{
+	grid-column: 2 ;
+	grid-row: 1;
+}
+.thirdc{
+	grid-column: 3;
+	grid-row: 1;
+}
+.fourthc{
+	grid-column: 4;
+	grid-row: 1;
+}
+/* pizza displays */
+.firstb{
+	grid-column: 3;
+  grid-row: 2;
+}
+.largeb{
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 3;
+}
+.thirdb{
+	grid-column: 4;
+	grid-row: 2;
+}
+.fourthb{
+	grid-column: 3;
+	grid-row: 3;
+}
+.fifthb{
+  grid-column: 4;
+  grid-row: 3;
+}
+/* no tomato sauce pizza display */
+.firstd
+{
+  grid-column: 1;
+  grid-row: 3;
+}
+.secondd
+{
+  grid-column: 2;
+  grid-row: 3;
+}
+.thirdd{
+  grid-column: 3;
+  grid-row: 3;
+}
+.fourthd{
+  grid-column: 3 / 5;
+  grid-row: 1 / span 2;
+}
+.larged{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.fifthd{
+  grid-column: 4;
+  grid-row: 3;
+}
 
 
 
+
+.menuImageGrid h4{
+  color: white;
+  position: absolute;
+  z-index: 1000000;
+  margin: 0 auto;
+  font-size: 1.4em;
+  font-family: 'Oxygen', sans-serif;
+  float: left;
+  margin-left: 5px;
+  margin-top: 2%;
+  padding: 10px 10px 10px 10px;
+  text-shadow: 5px 2px 8px black;
+  -webkit-box-shadow: -5px 5px 0px 0px black;
+  -moz-box-shadow:    -5px 5px 0px 0px black;
+  box-shadow:         -5px 5px 0px 0px black;
+  background-color: #972d32;
+}
+@media(max-width:1000px) {
+  .menuImageGrid h4{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:830px) {
+
+  @supports (display: grid) {
+  	.menuImageGrid {
+  		display: grid;
+  		grid-template-columns: 50% 50%;
+  		justify-content: center;
+  	}
+  }
+  .firstc{
+  	grid-column: 1;
+    grid-row: 1;
+  }
+  .secondc{
+  	grid-column: 2 ;
+  	grid-row: 1;
+  }
+  .thirdc{
+  	grid-column: 1;
+  	grid-row: 2;
+  }
+  .fourthc{
+  	grid-column: 2;
+  	grid-row: 2;
+  }
+  /* more pizza */
+  .firstb{
+  	grid-column: 1;
+    grid-row: 4;
+  }
+  .largeb{
+  	grid-column: 1 / span 2;
+  	grid-row: 3;
+  }
+  .thirdb{
+  	grid-column: 2;
+  	grid-row: 4;
+  }
+  .fourthb{
+  	grid-column: 1;
+  	grid-row: 5;
+  }
+  .fifthb{
+    grid-column: 2;
+    grid-row: 5;
+  }
+/* no sauce */
+.firstd
+{
+  grid-column: 1;
+  grid-row: 2;
+}
+.secondd
+{
+  grid-column: 2;
+  grid-row: 2;
+}
+.thirdd{
+  grid-column: 1;
+  grid-row: 4;
+}
+.fourthd{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+.larged{
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.fifthd{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+}
 
 
 
@@ -190,7 +381,7 @@ textarea
 	text-align: center;
 	padding:12px 27px;
 	text-decoration: none;
-	color: #282728;
+	color: white;
 	font-size: 1.25em;
 	display: block;
 }
@@ -204,7 +395,7 @@ textarea
 	transition: all .3s linear;
 }
 .onPage a{
-  border-bottom:4px solid #972d32;
+  border-bottom:4px solid white;
 }
 
 
@@ -225,7 +416,7 @@ textarea
 .hotnav a{
 	text-align: center;
 	text-decoration: none;
-	color: #282728;
+	color: white;
 	padding: 10px;
 }
 .hotnav a img{
@@ -251,6 +442,7 @@ h2
 h3
 {
 	font-size:  1.999em ;
+  text-align: center;
 }
 h4
 {
@@ -456,6 +648,7 @@ body {
 	margin: 0 auto;
   position: relative;
   text-align: center;
+  background-image: url("img/back.jpg");
 }
 #c2{
   display:inline-block;
