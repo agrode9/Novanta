@@ -935,16 +935,8 @@ footer a {
 	}
 	.codeBack
 	{
-    background-image: url("img/chairs.jpg");
-    background-attachment: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow-y: scroll;	}
+		background-image: none;
+	}
 	.nav{
 		list-style-type: none;
 		margin: 0;
