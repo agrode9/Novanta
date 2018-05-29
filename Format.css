@@ -528,7 +528,7 @@ hr
 .content
 {
 	text-align: center;
-	max-width: 50%;
+	max-width: 75%;
 	line-height: 1.5;
 	margin: 0 auto;
 	padding-bottom: 1rem;
@@ -745,7 +745,7 @@ iframe{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0,0,0, 0.6);
+	background: rgba(0,0,0, 0.75);
 	transition: all .3s linear;
 }
 .tint p, .tint h2, .tint h4{
@@ -935,8 +935,16 @@ footer a {
 	}
 	.codeBack
 	{
-		background-image: none;
-	}
+    background-image: url("img/chairs.jpg");
+    background-attachment: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: scroll;	}
 	.nav{
 		list-style-type: none;
 		margin: 0;
