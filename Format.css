@@ -31,14 +31,19 @@
   justify-content: space-around;
 }
 .row{
-  width: 40%;
+  width: 75%;
   order: 1;
   flex-basis: auto;
   flex: 0 1 auto;
   align-self: auto;
 
 }
-
+@media(min-width: 1400px)
+{
+  .row{
+		  width: 50%;
+		}
+}
 input, textarea {
 	font-family: 'Oxygen', sans-serif;
   	width: 100%;
@@ -421,6 +426,7 @@ textarea
 	color: white;
 	font-size: 1.25em;
 	display: block;
+  font-weight: 900;
 }
 .nav li{
   display: inline;
@@ -689,6 +695,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 #c2{
   display:inline-block;
