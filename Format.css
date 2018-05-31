@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'rabioheadregular';
-    src: url('rabiohead-webfont.woff2') format('woff2'),
-         url('rabiohead-webfont.woff') format('woff');
+    src: url('font/rabiohead-webfont.woff2') format('woff2'),
+         url('font/rabiohead-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -14,7 +14,9 @@
 
 
 
-
+a{
+  font-family: "rabioheadregular", sans-serif;
+}
 /*************************************************contact*************************************************/
 .container{
   padding: 0;
@@ -45,7 +47,7 @@
 		}
 }
 input, textarea {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'rabioheadregular', sans-serif;
   	width: 100%;
     height: 30px;
     border: solid transparent 2px;
@@ -54,7 +56,7 @@ input, textarea {
     margin: 10px 0 10px 0;
     padding: 0 0 10px;
     background-color: white;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 input[type=submit]
 {
@@ -125,7 +127,7 @@ textarea
 	z-index: 1000000;
 	margin: 0 auto;
 	font-size: 2em;
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'rabioheadregular', sans-serif;
 	float: left;
 	margin-top: 20%;
   padding: 10px 10px 13px 60px;
@@ -287,8 +289,8 @@ textarea
   position: absolute;
   z-index: 1000000;
   margin: 0 auto;
-  font-size: 1.4em;
-  font-family: 'Oxygen', sans-serif;
+  font-size: 2.1rem;
+  font-family: 'rabioheadregular', sans-serif;
   float: left;
   margin-left: 5px;
   margin-top: 2%;
@@ -301,7 +303,7 @@ textarea
 }
 @media(max-width:1000px) {
   .menuImageGrid h4, .oddMenuImageGrid{
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 @media(max-width:830px) {
@@ -424,7 +426,7 @@ textarea
 	padding:12px 27px;
 	text-decoration: none;
 	color: white;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	display: block;
   font-weight: 900;
 }
@@ -480,7 +482,7 @@ h1
 }
 h2
 {
-	font-size:  2.827em ;
+	font-size:  4em ;
 }
 h3
 {
@@ -497,11 +499,11 @@ h5{
 }
 p
 {
-	font-size: 1.25em;
+	font-size: 2em;
 }
 h1, h2, h3, h4, p, h5
 {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'rabioheadregular', sans-serif;
 }
 .dark{
 	color: #282728;
@@ -535,7 +537,7 @@ hr
 {
 	text-align: center;
 	max-width: 75%;
-	line-height: 1.5;
+	line-height: 1.1;
 	margin: 0 auto;
 	padding-bottom: 1rem;
 }
@@ -561,7 +563,7 @@ a.button
 	cursor: pointer;
 	-webkit-transition:0.3s all ease;
  	transition:0.3s ease all;
-	font-size: 1.414em;
+	font-size: 2em;
 	max-width: 200px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -585,7 +587,7 @@ a.button1
 	cursor: pointer;
 	-webkit-transition:0.3s all ease;
  	transition:0.3s ease all;
-	font-size: 1.414em;
+	font-size: 1.6em;
 	max-width: 200px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -785,7 +787,7 @@ footer h1, footer h2, footer h3, footer h4, footer p{
 }
 footer h4
 {
-	font-size: .85em;
+	font-size: .9em;
 	text-align: center;
 	padding-top: 100px;
 }
@@ -843,12 +845,12 @@ footer a img{
 /*----------------------media changes---------------------- */
 footer p{
 	text-align: left;
-	font-size: .9rem;
+	font-size: 1.2rem;
 	font-weight: lighter;
 }
 footer a {
-	font-size: .9rem;
-	font-family: 'Oxygen', sans-serif;
+  font-size: 1.2rem;
+	font-family: 'rabioheadregular', sans-serif;
 }
 @media (max-width: 900px){
 	footer p{
@@ -954,7 +956,7 @@ footer a {
     min-height: 450px;
   }
   .nav a{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding:12px 8px;
     margin-left: 22px;
   }
@@ -1017,7 +1019,7 @@ footer a {
 		z-index: 1000000;
 		margin: 0 auto;
 		font-size: 2em;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'rabioheadregular', sans-serif;
 		float: left;
 		margin-left: 5px;
 		margin-top: 25%;
@@ -1073,7 +1075,7 @@ footer a {
 		z-index: 1000000;
 		margin: 0 auto;
 		font-size: 2em;
-		font-family: 'Oxygen', sans-serif;
+		font-family: 'rabioheadregular', sans-serif;
 		float: left;
 		margin-left: 5px;
 		margin-top: 55%;
