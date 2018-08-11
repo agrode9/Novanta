@@ -410,31 +410,33 @@ textarea
 
 /*----------------------head and nav---------------------- */
 .nav{
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  display: inline-block;
-  margin: 0 auto;
-  bottom: 20px;
-  text-align: center;
-  margin-left: -250px;
+  padding-left: 0;
 }
-
 .nav a{
-	float:left;
 	text-align: center;
-	padding:12px 27px;
+	padding:14px 16px;
 	text-decoration: none;
 	color: white;
-	font-size: 1.5em;
-	display: block;
-  font-weight: 900;
+	font-size: 1.5rem;
+  margin: 0px auto;
+  padding-bottom: 7px;
 }
+
 .nav li{
   display: inline;
   text-align: center;
+  padding: 10px 0 10px;
 }
 .nav a:hover{
-	color: white;
-	background-color: #972d32;
+	color: #972d32;
+	background-color: white;
 	transition: all .3s linear;
 }
 .onPage a{
@@ -944,20 +946,10 @@ footer a {
 	{
 		background-image: none;
 	}
-	.nav{
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-    margin-left: -200px;
-	}
   #c1{
     min-height: 450px;
   }
-  .nav a{
-    font-size: 1.4rem;
-    padding:12px 8px;
-    margin-left: 22px;
-  }
+
 	.hotnav li
 	{
 		list-style-type: none;
