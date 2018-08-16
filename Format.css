@@ -115,6 +115,8 @@ textarea
 	width: 100%;
 	padding: 10px;
 	overflow: hidden;
+  padding-left: 15px;
+  padding-bottom: 15px;
 }
 .project img
 {
