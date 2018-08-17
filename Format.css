@@ -61,6 +61,7 @@ input, textarea {
 input[type=submit]
 {
 	height: 50px;
+  width: 100.3%;
 }
 form{
 	padding-bottom: 40px;
