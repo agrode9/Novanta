@@ -183,7 +183,7 @@ textarea
 	grid-row: 2 ;
 }
 /*************************************************end work display*************************************************/
-.menuImageGrid, .oddMenuImageGrid {
+.menuImageGrid, .oddMenuImageGrid, .menuImageGridWide {
   display: flex;
 }
 @supports (display: grid) {
@@ -197,11 +197,17 @@ textarea
 		grid-template-columns: 25% 25% 25%;
 		justify-content: center;
   }
+  .menuImageGridWide{
+    display: grid;
+		grid-template-columns: 50% 35%;
+		justify-content: center;
+  }
 }
 
 .firstc img, .secondc img, .thirdc img, .fourthc img, .firstb img, .secondb img,
 .thirdb img, .largeb img, .fourthb img, .fifthb img, .firstd img, .secondd img,
-.thirdd img, .fourthd img, .larged img, .fifthd img, .firsts img, .seconds img, .thirds img{
+.thirdd img, .fourthd img, .larged img, .fifthd img, .firsts img, .seconds img, .thirds img,
+.firstlarge img, .secondlarge img{
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -284,7 +290,15 @@ textarea
   grid-column: 3;
   grid-row: 1;
 }
+.firstlarge{
+  grid-column: 1
+  grid-row: 1;
+}
+.secondlarge{
+  grid-column: 2;
+  grid-row: 1;
 
+}
 .menuImageGrid h4, .oddMenuImageGrid h4{
   color: white;
   position: absolute;
@@ -320,8 +334,20 @@ textarea
   		grid-template-columns: 100%;
   		justify-content: center;
     }
+    .menuImageGridWide{
+      display: grid;
+  		grid-template-columns: 100%;
+  		justify-content: center;
+    }
   }
-
+  .firstlarge{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .secondlarge{
+    grid-column: 1;
+    grid-row: 2;
+  }
   /* pizza */
   .firstc{
   	grid-column: 1 /span 2;
