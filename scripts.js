@@ -2,7 +2,7 @@
 $(window).load(function() {
   if(window.location.href.match('/index') != null ||window.location.href.match('/index.html') != null)
   {
-    window.setInterval(loadContent, 1000);
+    window.setInterval(loadContent, 2000);
   }
   else if(window.location.href.match('/menu') != null ||window.location.href.match('/menu.html') != null)
   {
